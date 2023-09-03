@@ -1,0 +1,58 @@
+.member-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .scroll-content {
+    display: flex;
+    animation: scrollAnimation 60s linear infinite;
+  }
+  
+  .scroll-content.paused {
+    animation-play-state: paused;
+  }
+  
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% * 13)); /* Adjust based on the number of members */
+    }
+  }
+  
+  .member {
+    flex: 0 0 300px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .member.active {
+    transform: scale(1.1); /* Apply styling for active member */
+  }
+  
+  .member img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .social {
+    margin-top: 10px;
+  }
+  
+  .social a {
+    margin: 0 5px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social a:hover {
+    color: #0077b5;
+  }
+  

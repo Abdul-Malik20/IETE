@@ -1,0 +1,33 @@
+/* Members.css */
+.members-container {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+.members-scrollable {
+    display: inline-flex;
+    padding: 1rem 0; /* Add padding for space between cards and edges */
+}
+
+.member-card {
+    flex: 0 0 auto;
+    margin-right: 1rem; /* Adjust the margin as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for each card */
+}
+.members-container {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.members-scrollable {
+    display: inline-flex;
+    padding: 1rem 0; /* Add padding for space between cards and edges */
+    gap: 20px; /* Add gap between cards */
+}
+
+.member-card {
+    flex: 0 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for each card */
+    width: 20rem;
+}

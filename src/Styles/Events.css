@@ -1,0 +1,45 @@
+.card-scroll-container {
+    position: relative;
+  }
+  
+  .card-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .card {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    
+    transition: opacity 0.3s ease-in-out;
+  }
+  .card:hover{
+    cursor: pointer;
+  }
+  
+  .card.active {
+    opacity: 1;
+  }
+  
+  .scroll-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .scroll-buttons button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .scroll-left {
+    margin-right: 10px;
+  }
+  
+  .scroll-right {
+    margin-left: 10px;
+  }
+  
